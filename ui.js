@@ -2527,7 +2527,8 @@ if(rcmail.env.action=="preview")
         var list_mark, items = [],
             list_items = [],
             meta = layout_metadata(),
-            button_func = function(button, items, cloned) {
+            button_func = function(button, items, cloned)
+            {
                 var item = $('<li role="menuitem">');
 
                 button = cloned ? create_cloned_button($(button), true, 'hidden-big hidden-large') : $(button).detach();
@@ -4773,42 +4774,6 @@ var trsize = d.querySelector('.message').getBoundingClientRect().height // more 
 d.style.paddingBottom=h%trsize+"px"
 }
 
-function scroll_mailbymail(e)
-{
-	e.preventDefault();
-    e.stopPropagation();
-	var mlc=document.getElementById("messagelist-content")
-	var scrollTop=mlc.scrollTop
-	
-	// all message
-	var trs=mlc.querySelectorAll('tr.message')
-	
-	// filter hidden
-	trs=Array.from(trs).filter((msg) => msg.style.display!="none"); 
-	
-	//find first shown tr
-	for(var i=0;i<trs.length;i++)
-		if(scrollTop<=trs[i].offsetTop)
-			break;
-
-
-	if(trs[i].offsetTop-scrollTop>15 && e.deltaY>0) i--;
-	
-	if(e.deltaY>0)
-		i++
-	else
-		i--
-
-	if(i<0)i=0;
-	if(i>=trs.length)i=trs.length;
-	
-	mlc.scrollTop=trs[i].offsetTop
-	
-}
-
-
-
-
 function refresh_mail_anim()
 {
 	
@@ -6106,14 +6071,6 @@ return window.self !== window.top
 function elastic2022_create_settingsmenu()
 {
 return //disable function
-
-var HTML='<fieldset class="elastic2022"><legend>Elastic2022</legend><table class="propform cols-sm-6-6"></table></fieldset>'
-$(HTML).insertAfter(".skin");
-
-//Create lines
-
-var HTML='<tr class="form-group row form-check"><td class="title col-sm-6"><label for="rcmfd_standard_windows" class="col-form-label">New email composer popup</label></td><td class="col-sm-6"><div class="custom-control custom-switch"><input name="_standard_windows" id="rcmfd_standard_windows" value="1" checked="checked" type="checkbox" class="form-check-input custom-control-input"><label for="rcmfd_standard_windows" class="custom-control-label" title=""></label></div></td></tr>'
-$(".elastic2022 .propform").append(HTML);
 }
 
 
