@@ -191,22 +191,18 @@ user-select:none;
 }
 
 
-.menu_bottom a{
-  color: var(--font);
-  display: block;
-  float: left;
-  border: 0 !important;
-  height: 50px;
-  width: 100%;
-  padding: 1.1rem;
-  padding-top:25px;
-  font-size: 1.1rem;
-  padding-right:20px;
-  text-align: left;
-  line-height: 0;
-}
-
-
+.menu_bottom a
+{
+    color: var(--font);
+    display: block;
+    float: left;
+    border: 0 !important;
+    height: 40px;
+    width: 100%;
+    padding: 0.8em 1.5rem;
+    font-size: 1.1rem;
+    text-align: left;
+  }
 
 .menu_bottom a:hover{
 color: var(--font);
@@ -219,10 +215,10 @@ color: var(--font);
 }
 
 
-.replacecontactpic{
-text-align : center;
-display : inline-block !important;
-margin: 0px 8px 0 0px !important;
+.replacecontactpic
+{
+    text-align : center;
+    display : inline-block !important;
 }
 
 
@@ -495,7 +491,13 @@ animation: spin 1.5s linear infinite;
 
 .deleteicon:before{content: "\f2ed";}
 
-.selecticon:before{content: "\f00c";}
+.selecticon:before
+{
+    content: "\f00c";
+    font-size: 0.5em;
+    position: relative;
+    top: -10px;
+}
 
 .divscale_default:before{content: "\f31e";color:#e2e2e2;font-size:16px !important;padding-left:5px;}
 
@@ -540,21 +542,30 @@ html.layout-normal #folderlist-content .sidebar-menu {
 
 
 
-.compose.button div{
-background-color: #fff;
-display:inline-block;
-width:150px;
-height:38px;
-border-radius:24px;
+.compose.button div
+{
+    background-color: #fff;
+    display:inline-block;
+    width: 120px;
+    height:38px;
+    border-radius:14px;
 
-line-height:38px;
-margin:1rem;
-padding:0 1rem 0 .7rem;
-text-align:center;
+    line-height:38px;
+    margin:1rem;
+    padding:0.15em 1em 0 .7rem;
+    text-align:center;
 }
 
-html.dark-mode .compose.button div{
-background-color: var(--backgroundbutton);
+html.dark-mode .compose.button div
+{
+    color: #f2f2f2;
+    background-color: var(--backgroundbutton);
+}
+
+html.dark-mode .compose.button div:hover
+{
+    color: #fff;
+    background-color: #555;
 }
 
 .compose.button:active{
@@ -598,15 +609,15 @@ display:block;
 
 
 
-.sebicon{
-font-size: 1.2em;
-font-family: Icons;
-font-style: normal;
-font-weight: 900;
-text-decoration: inherit;
-text-align: center;
-font-smoothing: antialiased;
-color: var(--font);
+.sebicon
+{
+    font-size: 1.2em;
+    font-family: Icons;
+    font-style: normal;
+    font-weight: 900;
+    text-decoration: inherit;
+    text-align: left;
+    color: var(--font);
 }
 
 
@@ -3335,7 +3346,9 @@ background-color: var(--backgroundhoverlight);
 #cubeselect_div:hover .cubeselect:before{
 opacity:.8;
 }
-.menu a.cubeselectpartial:before {
+
+a.cubeselectpartial:before
+{
     content: "\f0c8";
 }
 
@@ -3400,7 +3413,8 @@ opacity:.8;
 	font-size: 1.2em;
 }
 
-.menu a.assigngroup:before {
+.menu a.assigngroup:before
+{
     content: "\f234";
 }
 
@@ -3438,12 +3452,18 @@ opacity:.8;
     content: "\f0c5";
 }
 
-.menu a.create:before {
+.menu a.create:before
+{
     content: "\f0fe";
+    float: inherit;
+    font-size: 1em;
 }
 
-.menu a.delete:before {
+.menu a.delete:before
+{
     content: "\f2ed";
+    float: inherit;
+    font-size: 1em;
 }
 
 
