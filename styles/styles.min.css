@@ -271,25 +271,26 @@ visibility: visible;
 
 
 
-.sel_circle{
-width:32px;
-height:32px;
-border-radius:16px;
-margin-top: -.6rem;
-overflow: hidden;
-font-weight: 500;
-font-size: 1rem;
-line-height: 34px;
-color: #000;
+.sel_circle
+{
+    width:15px;
+    height:15px;
+    border-radius:4px;
+    overflow:    hidden;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #f5f5f5;
+    background-color: rgb(57, 57, 51);
 }
 
 
 
-#message-header .sel_circle {
-width:36px;
-height:36px;
-border-radius:18px;
-padding-top: 2px;
+#message-header .sel_circle
+{
+    width:36px;
+    height:36px;
+    border-radius:18px;
+    padding-top: 7px;
 }
 
 
@@ -715,11 +716,6 @@ body {
     background-color: var(--background);
 }
 
-#layout > div > .header a.button {
-    color: var(--font);
-}
-
-
 #layout > div > .header,
 .table-widget table.options-table tr:last-child td {
     border-bottom: 1px solid #d4dbde;
@@ -728,7 +724,7 @@ body {
 
 #layout-list,
 #layout-sidebar {
-    max-width: 30%;
+    max-width: 43%;
     position: relative;
 }
 
@@ -800,9 +796,6 @@ ul.treelist li div.treetoggle:before {
     font-size: 1.25em;
     display: block;
     float: left;
-    margin: 0 0.25rem 0 0;
-    width: 1.18em;
-    height: 1em;
     font-family: Icons;
     font-style: normal;
     font-weight: 900;
@@ -926,19 +919,17 @@ html.iframe body {
 }
 
 #layout > div > .footer,
-#layout > div > .header {
+#layout > div > .header 
+{
     font-size: 1rem;
     font-weight: 700;
-    line-height: 58px;
-    height: 58px;
-    min-height: 58px;
     padding: 0 0.25em;
     margin: 0;
     position: relative;
   /*  overflow: hidden;*/
     white-space: nowrap;
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 
 
@@ -995,7 +986,7 @@ html.dark-mode #layout > div > .footer {
     display: flex;
     flex-direction: column;
     flex: 2;
-    min-width: 220px;
+    min-width: 150px;
 }
 
 #layout-sidebar.sidebar-right {
@@ -4163,11 +4154,12 @@ color: var(--font2);
 .listing li {
 	user-select:none;
 }
-.listing li a {
+.listing li a
+{
     display: block;
     text-decoration: none;
     width: 100%;
-
+    line-height: 3em;
 }
 
 .listing:not(.withselection) td.selection,
@@ -4188,10 +4180,11 @@ html.layout-small td.selection {
 }
 
 
-.listing td.selection {
-    padding: 0 0 0 .4em;
-    width: 54px;
+.listing td.selection
+{
+    width: 35px;
     text-align: center;
+    padding-left: 10px;
 }
 
 
@@ -4266,9 +4259,10 @@ table.listing {
     border-collapse: unset;
 }
 
-ul.listing {
+ul.listing
+{
     margin: 0;
-    padding: 0;
+    padding: 0 2em 0 1em;
 }
 
 ul.listing > ul {
