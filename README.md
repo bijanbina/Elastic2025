@@ -14,10 +14,11 @@ Please consider [**DONATING**](https://www.paypal.com/donate/?hosted_button_id=N
 
 ## 🛠️ Installation
 
-1. Download Elastic2025 Theme
+1. Download [Elastic2025 Theme](https://github.com/bijanbina/Elastic2025/archive/refs/heads/main.zip)
 2. Copy all its content into Roundcube installation path inside skin folder. It should become then
     `<roundcube>/skin/elsastic2025/*`
-3. Enable the theme by going into the roundcube Setting>User Interface>Interface skin
+3. Enable the theme by going into the roundcube `Setting>User Interface>Interface skin`
+4. Follow the [Tweaks page](TWEAKZ.md) to get the exact result as the screenshot
 
 ## 🐞 Known Issues
 
