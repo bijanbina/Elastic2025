@@ -1030,10 +1030,13 @@ html.iframe #layout-content {
 }
 
 #layout-content > .content,
-#layout-content > .formcontent {
-    height: 100%;
+#layout-content > .formcontent
+{
     width: 100%;
     flex: 1;
+    background-color: #eee;
+    color: #333;
+    padding: 1.2em 1.8rem;
 }
 
 .action-show #layout-content > .content,
@@ -1259,12 +1262,12 @@ html:not(.layout-small) a.toolbar-menu-button {
 
 
 
-.message_iconflag::before{
+.message_iconflag::before
+{
     content: "\f024" !important;
     font-size: 1em;
 
 	display:inline-block;
-	opacity:.5;
 }
 
 
@@ -1284,32 +1287,15 @@ vertical-align:top;
 float:initial !important;
 }
 
-#mailtoolbar{
-margin-top:-20px;
-}
-
-#mailtoolbar a{
-display:inline-block;
-border-radius:2px;
-}
-
-
-.messagedate{
-right:10px;
-margin-top: -2px;
-text-align:right;
-position:absolute;
+.messagedate
+{
+    display: inline-block;
+    padding: 0 1em;
 }
 
 #mailtoolbar span{
 display:none;
 }
-#mailtoolbar a{
-height:38px;
-min-width:38px;
-margin:0;
-}
-
 
 html.layout-normal #mailtoolbar a,
 html.layout-small #mailtoolbar a{
@@ -2934,32 +2920,41 @@ html.touch .popover .listing li a:before {
     outline: 0;
 }
 
-.menu.toolbar li {
+.menu.toolbar li
+{
     display: inline-block;
-    height: 58px;
 }
 
-.menu.toolbar a {
-	color: var(--font);
-    display: block;
-    float: left;
-    border: 0 !important;
-    height: 58px;
-    min-width: 2rem;
-    max-width: 6rem;
-    width: auto;
-    padding: 0.45rem;
-    line-height: 1.5;
+.menu.toolbar a
+{
+    padding: 0 1.2rem;
     cursor: pointer;
-    font-size: 1rem;
-    text-align: center;
+    font-size: 0.9em;
 }
 
-.menu.toolbar a:before {
-    height: 1.75rem !important;
-    float: none !important;
-    width: auto !important;
-    margin: 0 !important;
+#mailboxlist
+{
+    line-height: 40px;
+    padding: 0;
+}
+
+#mailtoolbar
+{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-bottom: 1px;
+}
+
+#mailtoolbar a
+{
+    color: #585858;
+}
+
+#mailtoolbar a:hover
+{
+    color: #333;
+    background-color: #eee;
 }
 
 .menu_bottom a.selected {
@@ -3340,10 +3335,16 @@ display:none !important;
 	transform:rotate(90deg) translateX(-2px)
 }
 
-.menu a.cubeselect:before {
+a.cubeselect:before 
+{
     content: "\f0c8";
 	font-weight:500 !important;
-	opacity:.3;
+    font-size: 1.25em;
+    display: block;
+    font-family: Icons;
+    font-style: normal;
+    text-decoration: inherit;
+    text-align: center;
 }
 
 #cubeselect_div:hover{
@@ -3480,8 +3481,15 @@ a.cubeselectpartial:before
     content: "\f019";
 }
 
-.menu a.dropdown:before {
+a.dropdown:before 
+{
     content: "\f0d7";
+    font-size: 1.25em;
+    display: block;
+    font-family: Icons;
+    font-style: normal;
+    text-decoration: inherit;
+    text-align: center;
 }
 
 .menu a.edit:before {
@@ -3616,8 +3624,11 @@ border-top : 1px solid var(--bordercolor);
     content: "\f15b";
 }
 
-.menu a.purge:before {
+.menu a.purge:before
+{
     content: "\f12d";
+    float: inherit;
+    font-size: 1em;
 }
 
 .menu a.qrcode:before {
@@ -3773,16 +3784,13 @@ border-top : 1px solid var(--bordercolor);
     content: "\f010";
 }
 
-.searchbar {
-    height: 36px;
-    min-height: 36px;
-    line-height: 40px;
+.searchbar
+{
     display: inline-flex;
     align-items: center;
     overflow: hidden;
     position: relative;
-	width:100%;
-
+    width: 80%;
 }
 
 .searchbar form {

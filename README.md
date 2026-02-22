@@ -1,7 +1,7 @@
 # Elastic2025
-Elastic2025 is a dark Roundcube theme based on the [Elastic2022](https://github.com/seb1k/Elastic2022) by [Seb1k](https://www.roundcubeforum.net/index.php?action=profile;u=66688).
+Elastic2025 is a dark RoundCube theme based on the [Elastic2022](https://github.com/seb1k/Elastic2022) by [Seb1k](https://www.roundcubeforum.net/index.php?action=profile;u=66688).
 
-Please consider [**DONATING**](https://www.paypal.com/donate/?hosted_button_id=N9LJWC4WH8ZJC) if you liked it. This keeps us motivated to continue polishing the theme and fixing bugs. Even a small portion matter so don’t skip!
+Please consider [**DONATING**](https://www.paypal.com/donate/?hosted_button_id=N9LJWC4WH8ZJC) if you liked it. This keeps us motivated to continue polishing the theme and fixing bugs. Even a small portion matters so please don’t skip it!
 
 <a href="https://www.paypal.com/donate/?hosted_button_id=N9LJWC4WH8ZJC">
 <img src="https://villageatithaca.org/wp-content/uploads/2020/03/paypal-donate-button.png" height="200" width="200">
@@ -14,11 +14,11 @@ Please consider [**DONATING**](https://www.paypal.com/donate/?hosted_button_id=N
 
 ## 🛠️ Installation
 
-1. Download [Elastic2025 Theme](https://github.com/bijanbina/Elastic2025/archive/refs/heads/main.zip)
-2. Copy all its content into Roundcube installation path inside skin folder. It should become then
-    `<roundcube>/skin/elsastic2025/*`
-3. Enable the theme by going into the roundcube `Setting>User Interface>Interface skin`
-4. Follow the [Tweaks page](TWEAKZ.md) to get the exact result as the screenshot
+1. Download the [Elastic2025 Theme](https://github.com/bijanbina/Elastic2025/archive/refs/heads/main.zip)
+2. Copy all of its content into your RoundCube installation inside the skin folder. It should then be
+    `<RoundCube>/skin/elsastic2025/*`
+3. Enable the theme by going into the RoundCube `Settings > User Interface > Interface skin`
+4. Follow the [Tweaks page](TWEAKS.md) to get the exact result shown in the screenshots.
 
 ## 🐞 Known Issues
 
@@ -27,7 +27,7 @@ Please consider [**DONATING**](https://www.paypal.com/donate/?hosted_button_id=N
 
 ## ⭐ Why Now & Wishlist
 
-Gmail removed ability to pull messages from other providers as of Jan 2026. This project aim to offer a simple drop in replacement webmail experience in Roundcube (especially on desktop). Still many features are missing. Please consider donating if you are interested in these as they require more time & effort but definitely possible!
+Gmail removed the ability to pull messages from other providers as of Jan 2026. This project aims to offer a simple drop-in replacement webmail experience in RoundCube (especially on desktop). Many features are still missing. Please consider donating if you are interested in these as they require more time & effort but they’re definitely possible!
 
 - Spell checking
 - AI autocomplete
@@ -39,9 +39,9 @@ Gmail removed ability to pull messages from other providers as of Jan 2026. This
 
 ## 🤝 Support and Contribution
 
-If you find a bug you can easily fix it by the browser inspector and editing the corresponding CSS file. If you like your fix to be merge into the main stream please don’t hesitate to create a pull request in the GitHub page and if it matches our style and test it will be merged.
+If you find a bug you can easily fix it using the browser inspector and editing the corresponding CSS file. If you like your fix to be merge into the mainstream please don’t hesitate to create a pull request on the GitHub page and if it matches our style and test it will be merged.
 
-If you notice a bug but you don’t have time to fix it or create the pull request please consider donating. We know the theme currently has many bugs and by donating even a small number you keep helping to fix all these bugs. The theme took almost 2000 hours to refine and publish, if that hours helps you save time, a small donation would be really appreciated.
+If you notice a bug but you don’t have time to fix it or create the pull request please consider donating. We know the theme currently has many bugs and by donating even a small number you keep helping to fix all these bugs. The theme took almost 2000 hours to refine and publish, if those hours help you, a small donation would be really appreciated.
 
 
 <a href="https://www.paypal.com/donate/?hosted_button_id=N9LJWC4WH8ZJC">
