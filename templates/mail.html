@@ -45,40 +45,19 @@
 <div id="layout-list" class="listbox selected">
 
 
-
-
+<div id="messagelist-header" class="header hide_small">
 	
-<table class="tableheaderseb"><tr>
+	<a href="#select" id="cubeselect" class="cubeselect" style="padding-left:12px;padding-right: 6px;" onclick="click_cubeselect(this)"></a>
+	<a href="#reply-all" class="dropdown" data-popup="listselect-menu" tabindex="0">
+		<span class="inner"><roundcube:label name="select" /></span>
+	</a>
 
-<td class="hidden-large" style="padding-left:.9rem;vertical-align: baseline;width:52px;">
-<a class="button icon task-menu-button hidden-large" href="#menu" style="font-size: 20px;"><span class="inner"><roundcube:label name="menu" /></span></a>
-
-</td>
-<td>
-	<roundcube:add_label name="showunread" />
 	<roundcube:object name="searchform" id="mailsearchform" wrapper="searchbar menu"
 		label="mailquicksearchbox" buttontitle="findmail" options="searchmenu" ariatag="h2" />
-</td>
-</tr></table>
-
-<div id="messagelist-header" class="header hide_small" style="height:28px;min-height:28px;padding:0 8px">
-
 	<div class="toolbar menu" role="toolbar">
-	
-		<div id="cubeselect_div">
-			<a href="#select" id="cubeselect" class="cubeselect" style="width:44px;padding-left:12px;padding-right: 20px;" onclick="click_cubeselect(this)"></a>
-			<a href="#reply-all" class="dropdown" data-popup="listselect-menu" tabindex="0" style="min-width: 1.2rem;width:1.2rem;margin-left: -16px;">
-				<span class="inner"><roundcube:label name="select" /></span>
-			</a>
-		</div>
-		
 		<roundcube:container name="listcontrols" id="listcontrols" />
-
-		<div>
-			<roundcube:button command="checkmail" type="link" class="button icon toolbar-button refresh" label="refresh" title="checkmail" innerclass="inner" />
-			<a href="#none" class="filter active button" data-popup="filter-menu"></a>
-			<a href="#none" class="sort active" data-popup="listsort-menu"></a>
-		</div>
+		<roundcube:button command="checkmail" type="link" class="button icon toolbar-button refresh" label="refresh" title="checkmail" innerclass="inner" />
+		<a href="#none" class="sort active" data-popup="listsort-menu"></a>
 
 	</div>
 
