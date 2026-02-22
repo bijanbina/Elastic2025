@@ -6,8 +6,8 @@ Elastic2025 is a Roundcube Dark Theme based on [Elastic2022](https://github.com/
 
 ## Screenshot
 
-![screenshot](img/2022-2.png)
-![screenshot](img/phone2.png)
+![RoundCube_Dark_Theme_Elastic2025_1](img/RoundCube_Dark_Theme_Elastic2025_1.png)
+![RoundCube_Dark_Theme_Elastic2025_2](img/RoundCube_Dark_Theme_Elastic2025_2.png)
 
 
 ## Installation

@@ -2546,34 +2546,26 @@ if(rcmail.env.action=="preview")
                 items.push(item);
             };
 
-        // convert content toolbar to a popup list
-        layout.content.find('.header > .menu').each(function() {
-            var toolbar = $(this);
-
-            toolbar.children().each(function() { button_func(this, items); });
-            toolbar.remove();
-        });
-
         // convert list toolbar to a popup list
-        layout.list.find('.header > .menu').each(function() {
-            var toolbar = $(this);
+        //layout.list.find('.header > .menu').each(function() {
+        //    var toolbar = $(this);
 
-            list_mark = toolbar.next();
+        //    list_mark = toolbar.next();
 
-            toolbar.children().each(function() {
-                if (meta.mode != 'large') {
-                    // TODO: Would be better to set this automatically on submenu display
-                    //       i.e. in show/shown event (see popup_init()), if possible
-                    $(this).data('popup-pos', 'right');
-                }
+        //    toolbar.children().each(function() {
+        //        if (meta.mode != 'large') {
+        //            // TODO: Would be better to set this automatically on submenu display
+        //            //       i.e. in show/shown event (see popup_init()), if possible
+        //            $(this).data('popup-pos', 'right');
+        //        }
 
-                // add items to the content menu too
-                button_func(this, items, true);
-                button_func(this, list_items);
-            });
+        //        // add items to the content menu too
+        //        button_func(this, items, true);
+        //        button_func(this, list_items);
+        //    });
 
-            toolbar.remove();
-        });
+        //    toolbar.remove();
+        //});
 
         // special elements to clone and add to the toolbar (mobile only)
         $('ul[data-menu="toolbar-small"] > li > a').each(function() {
@@ -2587,7 +2579,8 @@ if(rcmail.env.action=="preview")
         });
 
         // append the new list toolbar and menu button
-        if (list_items.length) {
+        if (list_items.length) 
+        {
             var container = layout.list.children('.header'),
                 menu_attrs = {'class': 'menu toolbar popupmenu listing iconized', id: 'toolbar-list-menu'},
                 menu_button = $('<a class="button icon toolbar-list-button" href="#list-menu">')
@@ -2595,10 +2588,12 @@ if(rcmail.env.action=="preview")
                 // TODO: copy original toolbar attributes (class, role, aria-*)
                 toolbar = $('<ul>').attr(menu_attrs).data('popup-parent', container).append(list_items);
 
-            if (list_mark.length) {
+            if (list_mark.length)
+            {
                 toolbar.insertBefore(list_mark);
             }
-            else {
+            else
+            {
                 container.append(toolbar);
             }
             container.append(menu_button);
@@ -4734,19 +4729,15 @@ if(UI.get_screen_mode()=="small" && document.getElementById("messagelist-content
 	  	  
 	}
 
-if(document.getElementById("messagelist-content"))
-	{
-	document.getElementById("messagelist-content").addEventListener("wheel", (e) =>		{
-		scroll_mailbymail(e)
-		})
-	new ResizeObserver(resizemessagelist).observe(document.getElementById("messagelist-content"))
-	}
-	
-if(document.getElementsByClassName("gitissue16").length)
-	{
-	var move=$('#folderlist-content').width()-$('#mailboxlist').width() 
-	$('.gitissue16 a').css({marginRight:move+'px'});
-	}
+if (document.getElementById("messagelist-content"))
+{
+	new ResizeObserver(resizemessagelist).observe(document.getElementById("messagelist-content"));
+}
+
+if (document.getElementsByClassName("gitissue16").length) {
+	var move = $('#folderlist-content').width() - $('#mailboxlist').width();
+	$('.gitissue16 a').css({marginRight: move + 'px'});
+}
 
 
 function resizemessagelist()
@@ -4843,17 +4834,17 @@ if(rcmail.env.action=="preview")
 
 function change_contactphoto_by_divLetter()
 {
-var contactphoto = $('.contactphoto')[0]
+    var contactphoto = $('.contactphoto')[0]
 
-var d = document.createElement("div");
-d.className="sel_circle maillogo_no_select replacecontactpic"
-var txt = textforcircle($('.header .from').text())
-var c = colors_from_txt(txt)
-d.style.backgroundColor="#"+c
-d.innerHTML = txt
+    var d = document.createElement("div");
+    d.className="sel_circle maillogo_no_select replacecontactpic"
+    var txt = textforcircle($('.header .from').text())
+    var c = colors_from_txt(txt)
+    d.style.backgroundColor="#"+c
+    d.innerHTML = txt
 
-contactphoto.parentElement.appendChild(d);
-contactphoto.style.display="none";
+    contactphoto.parentElement.insertBefore(d, contactphoto.parentElement.firstChild);
+    contactphoto.style.display="none";
 }
 
 function flag_click()
@@ -4966,8 +4957,8 @@ for(var i=0;i<msgs.length;i++)
 			{
 			var txt = get_personna_from_mailblock(msgs[i])
 			var c = colors_from_txt(txt)
-			d.style.backgroundColor="#"+c
-			d.innerHTML = txt
+			//d.style.backgroundColor="rgb(57, 57, 51)"
+			//d.innerHTML = txt
 			}
 
 		if(LSdata[emailencode]===undefined)
@@ -5111,19 +5102,13 @@ return textforcircle(txt)
 
 function textforcircle(txt)
 {
-txt = txt.trim().replace(/[|&;$%@"<>()+-.,●]/g, "").trim();
+    txt = txt.trim().replace(/[|&;$%@"<>()+-.,●]/g, "").trim();
 
-var tab = txt.split(' ');
-var ret = txt.charAt(0)
+    var tab = txt.split(' ');
+    var ret = txt.charAt(0)
 
-if(tab[1])
-    ret+=tab[1].charAt(0)
-return ret.toUpperCase();
+    return ret.toUpperCase();
 }
-
-
-
-
 
 function colors_from_txt(txt)
 {
