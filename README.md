@@ -1,7 +1,6 @@
 # Elastic2025
 Elastic2025 is a dark RoundCube theme based on the [Elastic2022](https://github.com/seb1k/Elastic2022) by [Seb1k](https://www.roundcubeforum.net/index.php?action=profile;u=66688).
-
-Please consider [**DONATING**](https://www.paypal.com/donate/?hosted_button_id=N9LJWC4WH8ZJC) if you liked it. This keeps us motivated to continue polishing the theme and fixing bugs.
+Gmail [removed the ability to pull messages from other domains as of Jan 2026](https://support.google.com/mail/answer/16604719?hl=en). This project aims to offer a simple drop-in replacement webmail experience in RoundCube (especially on desktop).  Please consider [**DONATING**](https://www.paypal.com/donate/?hosted_button_id=N9LJWC4WH8ZJC) if you liked it.
 
 <a href="https://www.paypal.com/donate/?hosted_button_id=N9LJWC4WH8ZJC">
 <img src="https://villageatithaca.org/wp-content/uploads/2020/03/paypal-donate-button.png" height="200" width="200">
@@ -25,9 +24,9 @@ Please consider [**DONATING**](https://www.paypal.com/donate/?hosted_button_id=N
 - Does not work on Android (for now)
 - Icon issues on the Settings page and Compose/Send page
 
-## ⭐ Why Now & Wishlist
+## ⭐ Wishlist
 
-Gmail [removed the ability to pull messages from other domains as of Jan 2026](https://support.google.com/mail/answer/16604719?hl=en). This project aims to offer a simple drop-in replacement webmail experience in RoundCube (especially on desktop). Many features are still missing. Please consider donating if you are interested in these as they require more time & effort.
+Many features are missing, these require more time & effort and I work on them if the project get enough traction.
 
 - Spell checking
 - AI autocomplete
