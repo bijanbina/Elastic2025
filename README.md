@@ -1,6 +1,6 @@
 # Elastic2025
 Elastic2025 is a dark RoundCube theme based on the [Elastic2022](https://github.com/seb1k/Elastic2022).
-Gmail [stopped pulling messages from custom domains](https://support.google.com/mail/answer/16604719?hl=en). This project aims to offer a simple drop-in replacement webmail experience in RoundCube (on desktop).  Please consider [**DONATING**](https://www.paypal.com/donate/?hosted_button_id=N9LJWC4WH8ZJC) if you liked it.
+Gmail [stopped pulling messages from custom domains](https://support.google.com/mail/answer/16604719?hl=en). This project aims to offer a simple drop-in replacement webmail experience in RoundCube (on desktop).  Please consider [**DONATING**](https://www.paypal.com/donate/?hosted_button_id=N9LJWC4WH8ZJC) to keep this project ALIVE!
 
 <a href="https://www.paypal.com/donate/?hosted_button_id=N9LJWC4WH8ZJC">
 <img src="https://villageatithaca.org/wp-content/uploads/2020/03/paypal-donate-button.png" height="200" width="200">
