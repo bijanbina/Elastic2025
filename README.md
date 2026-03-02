@@ -1,6 +1,8 @@
 # Elastic2025
-Elastic2025 is a dark RoundCube theme based on the [Elastic2022](https://github.com/seb1k/Elastic2022).
-Gmail [stopped pulling messages from custom domains](https://support.google.com/mail/answer/16604719?hl=en). This project aims to offer a simple drop-in replacement webmail experience in RoundCube (on desktop).  Please consider [**DONATING**](https://www.paypal.com/donate/?hosted_button_id=N9LJWC4WH8ZJC) to keep this project ALIVE!
+A dark theme based on [Elastic2022](https://github.com/seb1k/Elastic2022).
+Gmail stopped [message pulling from domains](https://support.google.com/mail/answer/16604719?hl=en) which motivated me to create a replacement in RoundCube.  
+
+## Please [**DONATE**](https://www.paypal.com/donate/?hosted_button_id=N9LJWC4WH8ZJC) any amount help so don't skip!
 
 <a href="https://www.paypal.com/donate/?hosted_button_id=N9LJWC4WH8ZJC">
 <img src="https://villageatithaca.org/wp-content/uploads/2020/03/paypal-donate-button.png" height="200" width="200">
@@ -38,9 +40,9 @@ Many features are missing, these require more time & effort and I work on them i
 
 ## 🤝 Support and Contribution
 
-If you find a bug you can easily fix it using the browser inspector and editing the corresponding CSS file. If you like your fix to be merge into the mainstream please don’t hesitate to create [a pull request on the GitHub page](https://github.com/bijanbina/Elastic2025/pulls) and if it matches our style, it will be merged.
+Found a bug? Fix it by editing the CSS file. If you like to merge it with mainstream, create a [pull request](https://github.com/bijanbina/Elastic2025/pulls).
 
-Notice a bug but you don’t have time to fix it? Please consider donating with following button. That let us have more time and we spending it on fixing these bugs. Thanks!
+Notice a bug but you don’t have time? Donate with following button. That let us have time to fix these bugs. Thanks!
 
 <a href="https://www.paypal.com/donate/?hosted_button_id=N9LJWC4WH8ZJC">
 <img src="https://villageatithaca.org/wp-content/uploads/2020/03/paypal-donate-button.png" height="200" width="200">
