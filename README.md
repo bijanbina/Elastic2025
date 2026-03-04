@@ -1,8 +1,8 @@
 # Elastic2025
 A dark theme based on [Elastic2022](https://github.com/seb1k/Elastic2022).
-Gmail stopped [message pulling from domains](https://support.google.com/mail/answer/16604719?hl=en) which motivated me to create a replacement in RoundCube.  
+Gmail stopping [message pulling from domains](https://support.google.com/mail/answer/16604719?hl=en) motivated me to create a replacement in RoundCube.  
 
-## Please [**DONATE**](https://www.paypal.com/donate/?hosted_button_id=N9LJWC4WH8ZJC) any amount help so don't skip!
+## [**DONATE**](https://www.paypal.com/donate/?hosted_button_id=N9LJWC4WH8ZJC) so we don't die. any amount help!
 
 <a href="https://www.paypal.com/donate/?hosted_button_id=N9LJWC4WH8ZJC">
 <img src="https://villageatithaca.org/wp-content/uploads/2020/03/paypal-donate-button.png" height="200" width="200">
@@ -40,9 +40,9 @@ Many features are missing, these require more time & effort and I work on them i
 
 ## 🤝 Support and Contribution
 
-Found a bug? Fix it by editing the CSS file. If you like it to be merged, create a [pull request](https://github.com/bijanbina/Elastic2025/pulls).
+Found a bug? Fix by editing the CSS file. To merge it, create a [pull request](https://github.com/bijanbina/Elastic2025/pulls).
 
-Notice a bug but you don’t have time? Donate with following button so we can fix it!
+Notice a bug but don’t have time? Donate so we fix it:
 
 <a href="https://www.paypal.com/donate/?hosted_button_id=N9LJWC4WH8ZJC">
 <img src="https://villageatithaca.org/wp-content/uploads/2020/03/paypal-donate-button.png" height="200" width="200">
